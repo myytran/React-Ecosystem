@@ -1,13 +1,18 @@
+//STEP 1 OF REDUX; export a function that takes an argument and return an action object with the argument as payload
 export const CREATE_TODO = 'CREATE_TODO'
-export const REMOVE_TODO = 'REMOVE_TODO'
-
-//export a function that takes an argument and return an action object with the argument as payload
 export const createTodo = text => ({
     type: CREATE_TODO, 
     payload: { text },
 })
 
+export const REMOVE_TODO = 'REMOVE_TODO'
 export const removeTodo = text => ({
     type: REMOVE_TODO,
+    payload: { text }
+})
+
+export const MARK_TODO_AS_COMPLETED = 'MARK_TODO_AS_COMPLETED'
+export const markTodoAsCompleted = text => ({
+    type: MARK_TODO_AS_COMPLETED,
     payload: { text }
 })
