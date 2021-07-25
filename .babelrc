@@ -1,5 +1,6 @@
 // will tell the babel transpiler what presets and plugin to use to transpile our code
 
 {
-    "presets": ["@babel/preset-env", "@babel/preset-react"]
+    "presets": ["@babel/preset-env", "@babel/preset-react"],
+    "plugins": ["@babel/plugin-transform-runtime"]
 }
